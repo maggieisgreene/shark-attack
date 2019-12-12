@@ -1,17 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import studentShape from '../../helpers/propz/studentShape';
 
 class LiveStudent extends React.Component {
   static propTypes = {
-    student: studentShape.studentShape,
+    students: studentShape.studentShape,
   }
 
   render() {
+    const { student } = this.props;
+
     return (
       <div className="card">
-        <p>Cards will go hereeee!!!!</p>
+        <div className="card-body">
+          <h5 className="card-title">{student.firstName}</h5>
+          <h5 className="card-title">{student.lastName}</h5>
+        </div>
       </div>
     );
   }
