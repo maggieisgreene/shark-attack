@@ -139,9 +139,9 @@ const students = [
   },
 ];
 
-const livingStudents = () => students.filter((s) => !s.isDead);
+const getLivingStudents = () => students.filter((s) => !s.isDead);
 
-const deadStudents = () => students.filter((s) => s.isDead);
+const getDeadStudents = () => students.filter((s) => s.isDead);
 
 const followTheLight = (studentId) => {
   students.forEach((response) => {
@@ -151,4 +151,4 @@ const followTheLight = (studentId) => {
   });
 };
 
-export default { livingStudents, deadStudents, followTheLight };
+export default { getLivingStudents, getDeadStudents, followTheLight };
