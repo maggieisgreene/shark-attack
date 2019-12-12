@@ -8,10 +8,12 @@ This application has all of E10's students out for a beach day, but hungry shark
 
 ## Screenshots
 #### Mainview
-![Shark Attack Mainview]()
+![Shark Attack Mainview](https://raw.githubusercontent.com/maggieisgreene/shark-attack/master/src/screenshots/sharks%3Aonload.png)
 
 #### Shark Attack Event
-![Shark Attack Event Preview]()
+![Shark Attack Event Preview](https://raw.githubusercontent.com/maggieisgreene/shark-attack/master/src/screenshots/sharks%3Aattackview.png)
+
+![Shark Attack Event Preview](https://raw.githubusercontent.com/maggieisgreene/shark-attack/master/src/screenshots/sharks%3Aattackover.png)
 
 ## Run This Project
 - Clone down project from Github
