@@ -21,7 +21,7 @@ class Graveyard extends React.Component {
         <div className="graveyard-header">
           <h3>Grave Yard</h3>
         </div>
-        <div className="gravestoneZone">
+        <div className="gravestone-zone">
           {gravestoneCards}
         </div>
       </div>

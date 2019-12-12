@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   killStudent = () => {
-    studentData.followTheLight();
+    studentData.randomStudents();
     const students = studentData.aliveStudents();
     const passedStudents = studentData.passedStudents();
     this.setState({ students, passedStudents });

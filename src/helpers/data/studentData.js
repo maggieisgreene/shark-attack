@@ -143,9 +143,9 @@ const aliveStudents = () => students.filter((s) => !s.isDead);
 
 const passedStudents = () => students.filter((s) => s.isDead);
 
-const followTheLight = () => {
+const randomStudents = () => {
   const randomStudent = aliveStudents()[Math.floor(Math.random() * aliveStudents().length)];
   randomStudent.isDead = true;
 };
 
-export default { aliveStudents, passedStudents, followTheLight };
+export default { aliveStudents, passedStudents, randomStudents };
