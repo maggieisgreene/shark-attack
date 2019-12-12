@@ -1,3 +1,17 @@
-.sharkTank {
-  border: 2px black solid;
+.shark-zone {
+  width: 50%;
+  
+  .shark-zone-header {
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .shark-tank {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

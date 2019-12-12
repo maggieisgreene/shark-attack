@@ -1,0 +1,17 @@
+.graveyard {
+  width: 50%;
+
+  .graveyard-header {
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 10px;
+  }
+
+  .gravestoneZone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
