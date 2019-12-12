@@ -4,6 +4,7 @@ import './App.scss';
 import studentData from '../helpers/data/studentData';
 
 import SharkTank from '../components/SharkTank/SharkTank';
+import Graveyard from '../components/Graveyard/Graveyard';
 
 class App extends React.Component {
   state = {
@@ -13,20 +14,25 @@ class App extends React.Component {
 
   componentDidMount() {
     const students = studentData.aliveStudents();
-    this.setState({ students });
+    const passedStudents = studentData.passedStudents();
+    this.setState({ students, passedStudents });
   }
 
   killStudent = () => {
     studentData.followTheLight();
     const students = studentData.aliveStudents();
-    this.setState({ students });
+    const passedStudents = studentData.passedStudents();
+    this.setState({ students, passedStudents });
   }
 
   render() {
     return (
       <div className="App">
-        <h1 className="main-header">Shark Tank</h1>
-        <SharkTank students={this.state.students} killStudent={this.killStudent} />
+        <h1 className="main-header">Beach Day</h1>
+        <div className="d-flex flex-wrap">
+          <SharkTank students={this.state.students} killStudent={this.killStudent} />
+          <Graveyard passedStudents={this.state.passedStudents} />
+        </div>
       </div>
     );
   }
