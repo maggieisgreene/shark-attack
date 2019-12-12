@@ -28,10 +28,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1 className="main-header">Shark Tank</h1>
-        <div className="container d-flex flex-wrap">
+        <h1 className="main-header">Beach Day</h1>
+        <div className="d-flex flex-wrap">
           <SharkTank students={this.state.students} killStudent={this.killStudent} />
-          <Graveyard />
+          <Graveyard passedStudents={this.state.passedStudents} />
         </div>
       </div>
     );
