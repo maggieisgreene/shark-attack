@@ -25,7 +25,7 @@ class SharkTank extends React.Component {
 
     return (
       <div className="shark-zone col-6">
-        <h1>Shark Tank</h1>
+        <h3>Shark Tank</h3>
         <button className="btn btn-light" onClick={this.killStudentEvent}>Here's Brucey</button>
         <div className="shark-tank d-flex flex-wrap">
           {studentCard}

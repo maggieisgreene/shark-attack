@@ -12,13 +12,13 @@ class Graveyard extends React.Component {
   render() {
     const { passedStudents } = this.props;
 
-    const gravestones = passedStudents.map((passedStudent) => <Gravestone key={passedStudent.id} passedStudent={passedStudent}/>);
+    const gravestoneCards = passedStudents.map((passedStudent) => <Gravestone key={passedStudent.id} passedStudent={passedStudent}/>);
 
     return (
       <div className="graveyard col-6">
-        <h1>Dead People</h1>
+        <h3>Grave Yard</h3>
         <div className="gravestoneZone d-flex flex-wrap">
-          {gravestones}
+          {gravestoneCards}
         </div>
       </div>
     );
