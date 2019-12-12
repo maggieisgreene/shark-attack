@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
 
-import SharkTank from '../components/SharkTank/SharkTank';
 import studentData from '../helpers/data/studentData';
+
+import SharkTank from '../components/SharkTank/SharkTank';
 
 class App extends React.Component {
   state = {
@@ -10,15 +11,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const livingStudents = studentData.getLivingStudents();
-    this.setState({ livingStudents });
+    const students = studentData.getLivingStudents();
+    this.setState({ students });
   }
 
   render() {
     return (
       <div className="App">
         <h1 className="main-header">Shark Tank</h1>
-        <SharkTank />
+        <SharkTank students={this.state.students}/>
       </div>
     );
   }
