@@ -8,10 +8,17 @@ import SharkTank from '../components/SharkTank/SharkTank';
 class App extends React.Component {
   state = {
     students: [],
+    passedStudents: [],
   }
 
   componentDidMount() {
-    const students = studentData.getLivingStudents();
+    const students = studentData.aliveStudents();
+    this.setState({ students });
+  }
+
+  killStudent = () => {
+    studentData.followTheLight();
+    const students = studentData.aliveStudents();
     this.setState({ students });
   }
 
@@ -19,7 +26,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1 className="main-header">Shark Tank</h1>
-        <SharkTank students={this.state.students}/>
+        <SharkTank students={this.state.students} killStudent={this.killStudent} />
       </div>
     );
   }
